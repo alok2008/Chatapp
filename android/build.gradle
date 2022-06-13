@@ -1,0 +1,50 @@
+buildscript {
+    ext.kotlin_version = '1.6.10'
+    repositories {
+        google()
+//        mavenCentral()
+        jcenter()
+    }
+
+    dependencies {
+        // classpath 'com.android.tools.build:gradle-settings:7.4.0-alpha02'
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+        classpath 'com.google.gms:google-services:4.3.10'
+        classpath 'com.android.tools.build:gradle:7.2.1'
+    }
+}
+
+//plugins {
+//
+//    /**
+//     * You should use `apply false` in the top-level build.gradle file
+//     * to add a Gradle plugin as a build dependency, but not apply it to the
+//     * current (root) project. You should not use `apply false` in sub-projects.
+//     * For more information, see
+//     * Applying external plugins with same version to subprojects.
+//     */
+//
+//    id 'com.android.application' version '4.2' apply true
+//    id 'org.jetbrains.kotlin.android' version '1.6.10' apply false
+//}
+
+
+allprojects {
+    repositories {
+        google()
+//        mavenCentral()
+        jcenter()
+    }
+}
+
+rootProject.buildDir = '../build'
+subprojects {
+    project.buildDir = "${rootProject.buildDir}/${project.name}"
+}
+subprojects {
+    project.evaluationDependsOn(':app')
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}

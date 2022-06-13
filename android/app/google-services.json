@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "991514867874",
+    "project_id": "alok-chatapp",
+    "storage_bucket": "alok-chatapp.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:991514867874:android:3c98abc1b54d75205efffb",
+        "android_client_info": {
+          "package_name": "com.alok.chat_app"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "991514867874-ds0gmcvjim1ll0fmaogblcql4tul0g6n.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChjt6UddhE5MJaMkESDLW4yJwT23I5fz8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "991514867874-ds0gmcvjim1ll0fmaogblcql4tul0g6n.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
